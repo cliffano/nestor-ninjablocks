@@ -1,0 +1,7 @@
+- params:
+    nestorninjablocks: ../../../../../bin/nestor-ninjablocks
+
+- description: Command help should display help information
+  command: '{nestorninjablocks} --help'
+  exitcode: 0
+  output: 'Usage: nestor-ninjablocks'

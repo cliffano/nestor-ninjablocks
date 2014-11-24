@@ -1,0 +1,52 @@
+{
+  "name": "nestor-ninjablocks",
+  "description": "CLI for Jenkins Ninja Blocks notifier",
+  "keywords": [
+    "jenkins",
+    "ninjablocks",
+    "nestor"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://github.com/cliffano/nestor-ninjablocks",
+  "author": "Cliffano Subagio cliffano@gmail.com (http://blog.cliffano.com)",
+  "contributors": [
+    "All contributors (https://github.com/cliffano/nestor-ninjablocks/graphs/contributors)"
+  ],
+  "main": "./lib/nestor-ninjablocks",
+  "bin": {
+    "nestor-ninjablocks": "./bin/nestor-ninjablocks"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cliffano/nestor-ninjablocks.git"
+  },
+  "bugs": {
+    "url": "http://github.com/cliffano/nestor-ninjablocks/issues"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "dependencies": {
+    "bagofcli": "~0.2.1",
+    "lodash": "~2.4.1",
+    "ninja-blocks": "~0.1.3",
+    "nestor": "~0.2.4"
+  },
+  "devDependencies": {
+    "buster-node": "~0.7.0",
+    "referee": "~1.1.0"
+  },
+  "scripts": {},
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/cliffano/nestor-ninjablocks/raw/master/LICENSE"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+- params:
+    nestorninjablocks: ../../../../../bin/nestor-ninjablocks
+
+- description: Inexisting command should display error message
+  command: '{nestorninjablocks} someinexistingcommand'
+  exitcode: 1
+  output: 'Unknown command: someinexistingcommand, use --help for more info'
+
+- description: Inexisting Jenkins URL should display error message
+  command: 'JENKINS_URL=http://someinexistinghost {nestorninjablocks} run'
+  exitcode: 1
+  output: 'getaddrinfo ENOTFOUND'
