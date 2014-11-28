@@ -70,4 +70,8 @@ As an alternative to password, you can use Jenkins API token instead. Jenkins AP
 Colophon
 --------
 
+[Developer's Guide](http://cliffano.github.io/developers_guide.html#nodejs)
+
+Articles:
+
 * [Jenkins Build Status On Ninja Blocks RGB LED](http://blog.cliffano.com/2013/04/08/jenkins-build-status-on-ninja-blocks-rgb-led/)
