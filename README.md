@@ -72,6 +72,14 @@ Colophon
 
 [Developer's Guide](http://cliffano.github.io/developers_guide.html#nodejs)
 
+Build reports:
+
+* [Code complexity report](http://cliffano.github.io/nestor-ninjablocks/bob/complexity/plato/index.html)
+* [Unit tests report](http://cliffano.github.io/nestor-ninjablocks/bob/test/buster.out)
+* [Test coverage report](http://cliffano.github.io/nestor-ninjablocks/bob/coverage/buster-istanbul/lcov-report/lib/index.html)
+* [Integration tests report](http://cliffano.github.io/nestor-ninjablocks/bob/test-integration/cmdt.out)
+* [API Documentation](http://cliffano.github.io/nestor-ninjablocks/bob/doc/dox-foundation/index.html)
+
 Articles:
 
 * [Jenkins Build Status On Ninja Blocks RGB LED](http://blog.cliffano.com/2013/04/08/jenkins-build-status-on-ninja-blocks-rgb-led/)
