@@ -83,3 +83,8 @@ Build reports:
 Articles:
 
 * [Jenkins Build Status On Ninja Blocks RGB LED](http://blog.cliffano.com/2013/04/08/jenkins-build-status-on-ninja-blocks-rgb-led/)
+
+Related Projects:
+
+* [nestor](http://github.com/cliffano/nestor) - Jenkins CLI and node.js client
+* [nestor-buildlight](http://github.com/cliffano/nestor-buildlight) - CLI for Jenkins build light notifier
