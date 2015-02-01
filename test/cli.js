@@ -29,8 +29,8 @@ buster.testCase('cli - run', {
       actions.commands.run.action({ job: 'somejob', schedule: '* * * * * *', map: 'FAIL=00FF00,OK=00FF00,WARN=FFFF00' });
     });
     this.stub(Jenkins.prototype, 'monitor', function (opts, cb) {
-      assert.equals(opts.jobName, 'somejob');
-      assert.equals(opts.viewName, undefined);
+      assert.equals(opts.job, 'somejob');
+      assert.equals(opts.view, undefined);
       assert.equals(opts.schedule, '* * * * * *');
       cb(null, 'OK');
     });
@@ -45,8 +45,8 @@ buster.testCase('cli - run', {
       actions.commands.run.action({});
     });
     this.stub(Jenkins.prototype, 'monitor', function (opts, cb) {
-      assert.equals(opts.jobName, undefined);
-      assert.equals(opts.viewName, undefined);
+      assert.equals(opts.job, undefined);
+      assert.equals(opts.view, undefined);
       assert.equals(opts.schedule, undefined);
       cb(null, 'OK');
     });
@@ -63,8 +63,8 @@ buster.testCase('cli - run', {
       actions.commands.run.action({});
     });
     this.stub(Jenkins.prototype, 'monitor', function (opts, cb) {
-      assert.equals(opts.jobName, undefined);
-      assert.equals(opts.viewName, undefined);
+      assert.equals(opts.job, undefined);
+      assert.equals(opts.view, undefined);
       assert.equals(opts.schedule, undefined);
       cb(new Error('some error'));
     });

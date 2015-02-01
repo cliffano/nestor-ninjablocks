@@ -11,17 +11,17 @@ buster.testCase('nestorninjablocks - nestorninjablocks', {
   'should set opts to default when there is no customisation': function (done) {
     var nestor = new NestorNinjaBlocks('sometoken', {});
     assert.equals(nestor.token, 'sometoken');
-    assert.equals(nestor.opts.map.OK, '00FF00');
-    assert.equals(nestor.opts.map.FAIL, 'FF0000');
-    assert.equals(nestor.opts.map.WARN, 'FFFF00');
+    assert.equals(nestor.opts.map.ok, '00FF00');
+    assert.equals(nestor.opts.map.fail, 'FF0000');
+    assert.equals(nestor.opts.map.warn, 'FFFF00');
     done();
   },
   'should set map opt when provided': function (done) {
-    var nestor = new NestorNinjaBlocks('sometoken', { map: { OK: 'FFFF00', FAIL: 'FF00FF', WARN: '00FF00' }});
+    var nestor = new NestorNinjaBlocks('sometoken', { map: { ok: 'FFFF00', fail: 'FF00FF', warn: '00FF00' }});
     assert.equals(nestor.token, 'sometoken');
-    assert.equals(nestor.opts.map.OK, 'FFFF00');
-    assert.equals(nestor.opts.map.FAIL, 'FF00FF');
-    assert.equals(nestor.opts.map.WARN, '00FF00');
+    assert.equals(nestor.opts.map.ok, 'FFFF00');
+    assert.equals(nestor.opts.map.fail, 'FF00FF');
+    assert.equals(nestor.opts.map.warn, '00FF00');
     done();
   }
 });
@@ -42,7 +42,7 @@ buster.testCase('nestorninjablocks - notify', {
       }
     };
     this.mockNinjaBlocks.expects('app').once().withExactArgs({ user_access_token: 'sometoken' }).returns(mockApp);
-    this.ninja.notify('OK');
+    this.ninja.notify('ok');
   },
   'should log error message when an error occurs while getting a device': function () {
     this.mockConsole.expects('error').once().withExactArgs('some error');
@@ -50,14 +50,14 @@ buster.testCase('nestorninjablocks - notify', {
       devices: function (opts, cb) {
         assert.equals(opts.device_type, 'rgbled');
         assert.equals(opts.default_name, 'Nina\'s Eyes');
-        cb(new Error('some error'));
+        cb({ error: 'some error' });
       }
     };
     this.mockNinjaBlocks.expects('app').once().withExactArgs({ user_access_token: 'sometoken' }).returns(mockApp);
-    this.ninja.notify('OK');
+    this.ninja.notify('ok');
   },
   'should actuate colour on ninjablocks device based on notification status': function (done) {
-    this.mockConsole.expects('log').once().withExactArgs('Setting rgbled device colour to %s for status %s', '00FF00', 'OK');
+    this.mockConsole.expects('log').once().withExactArgs('Setting rgbled device colour to %s for status %s', '00FF00', 'ok');
     var mockApp = {
       devices: function (opts, cb) {
         assert.equals(opts.device_type, 'rgbled');
@@ -75,7 +75,7 @@ buster.testCase('nestorninjablocks - notify', {
       }
     };
     this.mockNinjaBlocks.expects('app').once().withExactArgs({ user_access_token: 'sometoken' }).returns(mockApp);
-    this.ninja.notify('OK');
+    this.ninja.notify('ok');
   },
   'should actuate unknown colour on ninjablocks device when notification status is unsupported': function (done) {
     this.mockConsole.expects('log').once().withExactArgs('Setting rgbled device colour to %s for status %s', 'FFFFFF', 'SOMEUNKNOWNSTATUS');
