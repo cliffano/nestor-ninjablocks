@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.github.com/cliffano/nestor-ninjablocks/master/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://secure.travis-ci.org/cliffano/nestor-ninjablocks.png?branch=master)](http://travis-ci.org/cliffano/nestor-ninjablocks)
-[![Dependencies Status](https://david-dm.org/cliffano/nestor-ninjablocks.png)](http://david-dm.org/cliffano/nestor-ninjablocks)
+[![Build Status](https://img.shields.io/travis/cliffano/nestor-ninjablocks.svg)](http://travis-ci.org/cliffano/nestor-ninjablocks)
+[![Dependencies Status](https://img.shields.io/david/cliffano/nestor-ninjablocks.svg)](http://david-dm.org/cliffano/nestor-ninjablocks)
 [![Coverage Status](https://coveralls.io/repos/cliffano/nestor-ninjablocks/badge.png?branch=master)](https://coveralls.io/r/cliffano/nestor-ninjablocks?branch=master)
 [![Published Version](https://badge.fury.io/js/nestor-ninjablocks.png)](http://badge.fury.io/js/nestor-ninjablocks)
 <br/>
