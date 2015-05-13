@@ -2,8 +2,8 @@
 
 [![Build Status](https://img.shields.io/travis/cliffano/nestor-ninjablocks.svg)](http://travis-ci.org/cliffano/nestor-ninjablocks)
 [![Dependencies Status](https://img.shields.io/david/cliffano/nestor-ninjablocks.svg)](http://david-dm.org/cliffano/nestor-ninjablocks)
-[![Coverage Status](https://coveralls.io/repos/cliffano/nestor-ninjablocks/badge.png?branch=master)](https://coveralls.io/r/cliffano/nestor-ninjablocks?branch=master)
-[![Published Version](https://badge.fury.io/js/nestor-ninjablocks.png)](http://badge.fury.io/js/nestor-ninjablocks)
+[![Coverage Status](https://img.shields.io/coveralls/cliffano/nestor-ninjablocks.svg)](https://coveralls.io/r/cliffano/nestor-ninjablocks?branch=master)
+[![Published Version](https://img.shields.io/npm/v/nestor-ninjablocks.svg)](http://www.npmjs.com/package/nestor-ninjablocks)
 <br/>
 [![npm Badge](https://nodei.co/npm/nestor-ninjablocks.png)](http://npmjs.org/package/nestor-ninjablocks)
 
