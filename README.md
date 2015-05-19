@@ -88,3 +88,4 @@ Related Projects:
 
 * [nestor](http://github.com/cliffano/nestor) - Jenkins CLI and node.js client
 * [nestor-buildlight](http://github.com/cliffano/nestor-buildlight) - CLI for Jenkins build light notifier
+* [nestor-lifx](http://github.com/cliffano/nestor-lifx) - CLI for Jenkins LIFX notifier
