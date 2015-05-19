@@ -4,7 +4,10 @@
   "keywords": [
     "jenkins",
     "ninjablocks",
-    "nestor"
+    "nestor",
+    "cli",
+    "notifier",
+    "ci"
   ],
   "version": "0.1.1",
   "homepage": "http://github.com/cliffano/nestor-ninjablocks",
