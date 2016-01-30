@@ -34,13 +34,13 @@
   },
   "dependencies": {
     "bagofcli": "^0.2.3",
-    "lodash": "^3.10.1",
+    "lodash": "^4.1.0",
     "ninja-blocks": "^0.1.3",
     "nestor": "^0.3.3"
   },
   "devDependencies": {
     "buster-node": "^0.7.1",
-    "referee": "^1.1.1"
+    "referee": "^1.2.0"
   },
   "scripts": {},
   "engines": {
